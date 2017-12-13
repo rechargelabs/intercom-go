@@ -487,6 +487,7 @@ type HTTPClient interface {
 	Get(string, interface{}) ([]byte, error)
 	Post(string, interface{}) ([]byte, error)
 	Patch(string, interface{}) ([]byte, error)
+	Put(string, interface{}) ([]byte, error)
 	Delete(string, interface{}) ([]byte, error)
 }
 ```
