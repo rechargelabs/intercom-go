@@ -2,6 +2,7 @@ package intercom
 
 import (
 	"encoding/json"
+
 	"github.com/rechargelabs/intercom-go/interfaces"
 )
 
