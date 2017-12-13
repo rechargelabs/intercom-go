@@ -36,7 +36,7 @@ func (api ConversationAPI) list(params conversationListParams) (ConversationList
 
 func (api ConversationAPI) read(id string) (Conversation, error) {
 	conversation := Conversation{}
-	data, err := api.httpClient.Post(fmt.Sprintf("/conversations/%s", id), conversationReadRequest{Read: true})
+	data, err := api.httpClient.Put(fmt.Sprintf("/conversations/%s", id), conversationReadRequest{Read: true})
 	if err != nil {
 		return conversation, err
 	}
