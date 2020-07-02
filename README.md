@@ -4,6 +4,10 @@
 
 Thin client for the [Intercom](https://www.intercom.io) API.
 
+# Why the fork
+
+This package is basically "gopkg.in/intercom/intercom-go.v2", with a small patch to this conversation issue: [https://github.com/intercom/intercom-go/issues/59](https://github.com/intercom/intercom-go/issues/59). 
+
 ## Install
 
 `go get github.com/rechargelabs/intercom-go`
